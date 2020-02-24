@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- for google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+
+
+        <style>
+            body{
+                background:url('librery.jpg');
+                margin: 0;
+                padding: 0;
+                background-size: cover;
+            }
+            .box{
+                                    
+                    position: absolute;
+                    top: 75%;
+                    left: 30%;
+                    transform: translate(-50%, -50%);
+                    width: 490px;
+                    padding: 40px;
+                    box-sizing: border-box;
+                    background: rgb(158,209,225);
+                    /* background: rgba(0, 0, 0, 0.6); for black transparent*/
+                    border-radius: 10px;
+            }
+            .box input{
+/* 
+                    width: 60%;
+                    padding: 8px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border: 2px solid salmon;
+                    -webkit-transition: 0.5s;
+                    transition: 0.5s;
+                    outline: none;
+                    border-radius: 8px;
+                    background: transparent; */
+                    
+                    width: 90%;
+                    padding: 0.625rem 0;
+                    font-size: 1rem;
+                    color: white;;
+                    letter-spacing: 0.062rem;
+                    margin-bottom: 1.8rem;
+                    border: none;
+                    border-bottom: 0.065rem solid #fff;
+                    outline: none;
+                    background: transparent;
+            }
+            
+            input:focus {
+            border-bottom: 1px solid #555;
+            }
+            
+            h1{
+                text-align: center;
+                color: salmon;
+            }
+            
+            .header{
+                font-size: 50px;
+                color: salmon;
+                font-family: 'Montserrat Subrayada', sans-serif;
+                margin-left: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <!-- <img src="book1.png" style="color:white; background-color: white"></img>  -->
+
+            <img src="book1.png" style="color:white;"></img> 
+            Smart Library 
+        </div>
+        <div class="box">
+            <h1>Register</h1>
+           FirstName: <input id="frstname" type="text" value=""
+             required placeholder="enter FirstName"/> 
+           Lastname: &nbsp;<input id="lastname" type="text" required placeholder="Enter lastname"/><br>
+            Password: &nbsp;<input id="password" type="password" required placeholder="enter any password"/>
+           Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <input id="email" type="email" required placeholder="enter Email Id"/>
+           Phoneno: &nbsp;
+           <input id="phn" type="tel" maxlength="10" required placeholder="enter Phone number"/>
+            <br><br>
+           <label>Gender: </label><br>
+  <input type="radio" id="male" name="gender" value="male"> <label style="margin-left: -180px;">Male</label>
+  <input type="radio" id="female" name="gender" value="female"  ><label style="margin-left: -180px;">Female</label><br>
+            <button id="Submit" class="btn btn-primary">
+                    Submit
+            </button>
+            
+        </div>
+        <script src="register.js"></script>
+    </body>
+</html>
